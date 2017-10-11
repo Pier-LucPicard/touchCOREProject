@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="ASCII"?>
 <core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmi:id="_1kCsIK6sEeern_GEb6ZYwA" name="Monitoring" models="_1kEhUK6sEeern_GEb6ZYwA">
   <featureModel xmi:id="_1kEhUK6sEeern_GEb6ZYwA" coreConcern="_1kCsIK6sEeern_GEb6ZYwA" root="_1kEhUa6sEeern_GEb6ZYwA">
-    <features xmi:id="_1kEhUa6sEeern_GEb6ZYwA" name="Monitoring"/>
+    <features xmi:id="_1kEhUa6sEeern_GEb6ZYwA" name="Monitoring" children="_9Xu1cK6tEeern_GEb6ZYwA _Gp1S8K6uEeern_GEb6ZYwA _IF3MEK6uEeern_GEb6ZYwA _Lv08YK6uEeern_GEb6ZYwA _hU19AK6uEeern_GEb6ZYwA"/>
+    <features xmi:id="_9Xu1cK6tEeern_GEb6ZYwA" name="Ressources" children="__uYjwK6tEeern_GEb6ZYwA _pUhJUK6uEeern_GEb6ZYwA _CP6sYK6uEeern_GEb6ZYwA" parent="_1kEhUa6sEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="__uYjwK6tEeern_GEb6ZYwA" name="CPU" parent="_9Xu1cK6tEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_CP6sYK6uEeern_GEb6ZYwA" name="GPU" parent="_9Xu1cK6tEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_Gp1S8K6uEeern_GEb6ZYwA" name="Network" children="_jgR50K6uEeern_GEb6ZYwA _lm8EUK6uEeern_GEb6ZYwA" parent="_1kEhUa6sEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_IF3MEK6uEeern_GEb6ZYwA" name="Function Call" parent="_1kEhUa6sEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_Lv08YK6uEeern_GEb6ZYwA" name="Notification" children="_NjZy0K6uEeern_GEb6ZYwA _O1CZ0K6uEeern_GEb6ZYwA _Tc5VwK6uEeern_GEb6ZYwA" parent="_1kEhUa6sEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_NjZy0K6uEeern_GEb6ZYwA" name="Email" parent="_Lv08YK6uEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_O1CZ0K6uEeern_GEb6ZYwA" name="Webhooks" parent="_Lv08YK6uEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_Tc5VwK6uEeern_GEb6ZYwA" name="SMS" parent="_Lv08YK6uEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_hU19AK6uEeern_GEb6ZYwA" name="Usage" parent="_1kEhUa6sEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_jgR50K6uEeern_GEb6ZYwA" name="Routes" parent="_Gp1S8K6uEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_lm8EUK6uEeern_GEb6ZYwA" name="Hosts" parent="_Gp1S8K6uEeern_GEb6ZYwA" parentRelationship="Optional"/>
+    <features xmi:id="_pUhJUK6uEeern_GEb6ZYwA" name="Memory" parent="_9Xu1cK6tEeern_GEb6ZYwA" parentRelationship="Optional"/>
   </featureModel>
 </core:COREConcern>
