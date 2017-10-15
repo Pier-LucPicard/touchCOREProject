@@ -1,0 +1,42 @@
+Monitoring is an important concern for the application developpement world.  This concern tracks various metric to help developper find problem and bottleneck to remove them and uptimise their application. To do this it has to present clearly the relevent infomrmation in repport or alert form.
+
+The feature exposed in theses models are the core feature for monitoring:
+
+Monitor:
+This is the main controller.  At specific user defined interval the monitor produce a repport with all the information it has gather.
+
+Ressource:
+Ressource monitoring is really important.  It can be monitored by other exterior software but having it embeded in your application centralize all the information.  Memory, CPU, Number of Thread, ...  This help to identify memory leaks, monitor overall performance, compile statistic on buissiness of the app and much more.
+
+Function Calls:
+Function calls monitoring enable to track specific metric to help diagnose bottleneck in the app.  For instance, all the calls to the database could be monitor to help identify the longest querry and find the ones that produce the largest results.  Here the metric are: execution time, exception tracking, results, arguments, call count, etc. 
+
+Report:
+All the information gathered will have to be display in some fashion.  The most basic functionality is to log them into a file arrange in a specific layout and clearly displayed.
+
+Alert:
+Alert are a way to inform that a specific monitored part of the application is doing something unusual.  Some rules on ressources or agents and at each new monitor entry this is check.  If the rule is true, then a special repport is produced targetting this unusual event.
+
+Scheduled:
+This provide a way to produce repport a specific date or time independently of the monitor gathering frequency.  This also allow to aggregate many repport into one that is deliver at a defined interval or date.
+
+
+The impacts of this concern are the following:
+
+Complexity:
+Having a proxies for monitoring function calls add to the complexity of the application.
+
+Information:
+This is the main focus.  The more you gather information the more you have to work with to diagnose the problem in your app.
+
+Disk Space:
+The more frequently you monitor the whole system the more data you have to store somewhere.
+
+CPU:
+This is minor but monitoring will draw a bit on the performance of the app.  The more part of the application is monitor the more the performance might take an hit.
+
+
+This is a really important part of every system because it provide developpers multiple level of monitoring inforamtion.  These information are critical to adress performance related issue and ensure that if a problem is found, they are noticed quickly.  Without monitoring developper are debbugging blindly when trying to optimise a system.  Furthermore, it help the devellopper a chance to adapt.  They can realese a product quickly and optimise only the relevent and critical part of the system according to the monitoring system data.
+
+
+
