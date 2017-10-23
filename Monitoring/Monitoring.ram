@@ -142,6 +142,7 @@
       <operations xmi:id="_nJDvILdFEeeNPqpqWDgvbQ" name="stop" visibility="public" returnType="_ztswAbNWEeeuwM3HAmyAEQ"/>
       <associationEnds xmi:id="_irJk8Lc7EeeNPqpqWDgvbQ" name="monitorTrigger" lowerBound="1" assoc="_irJk8bc7EeeNPqpqWDgvbQ" featureSelection="_irduALc7EeeNPqpqWDgvbQ"/>
       <attributes xmi:id="_4iL0kLc5EeeNPqpqWDgvbQ" name="frame" type="_4iHjILc5EeeNPqpqWDgvbQ"/>
+      <attributes xmi:id="_8ODoUbgIEeeMo_dfEtdkgg" name="logs" type="_8ODoULgIEeeMo_dfEtdkgg"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_2HFEELc5EeeNPqpqWDgvbQ" name="InfoFrame" visibility="public" dataType="true">
       <operations xmi:id="_ACrxkLc6EeeNPqpqWDgvbQ" name="addFrame" visibility="public" returnType="_ztswAbNWEeeuwM3HAmyAEQ">
@@ -193,6 +194,7 @@
       <operations xmi:id="_xh5LMLdFEeeNPqpqWDgvbQ" name="init" visibility="public" returnType="_ztswAbNWEeeuwM3HAmyAEQ"/>
       <attributes xmi:id="_OYPg4LdFEeeNPqpqWDgvbQ" name="frame" type="_4iHjILc5EeeNPqpqWDgvbQ"/>
     </classes>
+    <classes xsi:type="ram:Class" xmi:id="_6bjv8LgIEeeMo_dfEtdkgg" name="FormattedLog" dataType="true"/>
     <associations xmi:id="_gzF3Ibc7EeeNPqpqWDgvbQ" name="Timer_Clock" ends="_gzFQELc7EeeNPqpqWDgvbQ _gzF3ILc7EeeNPqpqWDgvbQ"/>
     <associations xmi:id="_irJk8bc7EeeNPqpqWDgvbQ" name="MonitorTimer_Monitor" ends="_irI94Lc7EeeNPqpqWDgvbQ _irJk8Lc7EeeNPqpqWDgvbQ"/>
     <types xsi:type="ram:RVoid" xmi:id="_ztswAbNWEeeuwM3HAmyAEQ"/>
@@ -206,6 +208,7 @@
     <types xsi:type="ram:RLong" xmi:id="_ztswCbNWEeeuwM3HAmyAEQ"/>
     <types xsi:type="ram:RByte" xmi:id="_ztswCrNWEeeuwM3HAmyAEQ"/>
     <types xsi:type="ram:RArray" xmi:id="_4iHjILc5EeeNPqpqWDgvbQ" type="_2HFEELc5EeeNPqpqWDgvbQ"/>
+    <types xsi:type="ram:RArray" xmi:id="_8ODoULgIEeeMo_dfEtdkgg" type="_6bjv8LgIEeeMo_dfEtdkgg"/>
   </structuralView>
   <messageViews xsi:type="ram:MessageView" xmi:id="_7s_jsrc5EeeNPqpqWDgvbQ" specifies="_7semULc5EeeNPqpqWDgvbQ">
     <specification xmi:id="_7s_js7c5EeeNPqpqWDgvbQ">
@@ -463,7 +466,10 @@
         <value xmi:id="_efYvIbc7EeeNPqpqWDgvbQ" x="186.0" y="312.0"/>
       </value>
       <value xmi:id="_JGky8LdFEeeNPqpqWDgvbQ" key="_JGhvoLdFEeeNPqpqWDgvbQ">
-        <value xmi:id="_JGky8bdFEeeNPqpqWDgvbQ" x="558.9184" y="222.0"/>
+        <value xmi:id="_JGky8bdFEeeNPqpqWDgvbQ" x="635.4647" y="225.0"/>
+      </value>
+      <value xmi:id="_6bk-ELgIEeeMo_dfEtdkgg" key="_6bjv8LgIEeeMo_dfEtdkgg">
+        <value xmi:id="_6bk-EbgIEeeMo_dfEtdkgg" x="895.9999" y="61.835396"/>
       </value>
     </containers>
     <containers xmi:id="_7s9ugLc5EeeNPqpqWDgvbQ" key="_7s_jsrc5EeeNPqpqWDgvbQ">
