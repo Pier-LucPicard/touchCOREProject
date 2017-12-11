@@ -199,8 +199,8 @@
       <operations xmi:id="_M40FMNuGEeeDsv1WRQ7p7Q" name="setMyTimer1" extendedVisibility="package" returnType="_5AYTzri-Eee9A-N-VXhdEA">
         <parameters xmi:id="_M40FMduGEeeDsv1WRQ7p7Q" name="newObject" type="_Eg8bUNuGEeeDsv1WRQ7p7Q"/>
       </operations>
-      <operations xmi:id="_QjUoENuGEeeDsv1WRQ7p7Q" name="start" visibility="public" abstract="true" returnType="_5AYTzLi-Eee9A-N-VXhdEA"/>
-      <operations xmi:id="_VoJM0NuGEeeDsv1WRQ7p7Q" name="stop" visibility="public" abstract="true" returnType="_5AYTzLi-Eee9A-N-VXhdEA"/>
+      <operations xmi:id="_QjUoENuGEeeDsv1WRQ7p7Q" name="start" visibility="public" returnType="_5AYTzLi-Eee9A-N-VXhdEA"/>
+      <operations xmi:id="_VoJM0NuGEeeDsv1WRQ7p7Q" name="stop" visibility="public" returnType="_5AYTzLi-Eee9A-N-VXhdEA"/>
       <operations xmi:id="_yN99wNuGEeeDsv1WRQ7p7Q" name="setSimpleMyTimer" extendedVisibility="protected" returnType="_5AYTzri-Eee9A-N-VXhdEA">
         <parameters xmi:id="_yN99wduGEeeDsv1WRQ7p7Q" name="newObject" type="_5AYTvLi-Eee9A-N-VXhdEA"/>
       </operations>
@@ -345,7 +345,7 @@
   <layout xmi:id="_5AYT1ri-Eee9A-N-VXhdEA">
     <containers xmi:id="_5AYT17i-Eee9A-N-VXhdEA" key="_5AXsybi-Eee9A-N-VXhdEA">
       <value xmi:id="_5AYT2Li-Eee9A-N-VXhdEA" key="_5AXsyri-Eee9A-N-VXhdEA">
-        <value xmi:id="_5AYT2bi-Eee9A-N-VXhdEA" x="895.88666" y="601.31256"/>
+        <value xmi:id="_5AYT2bi-Eee9A-N-VXhdEA" x="1099.8866" y="553.3125"/>
       </value>
       <value xmi:id="_5AYT2ri-Eee9A-N-VXhdEA" key="_5AXsy7i-Eee9A-N-VXhdEA">
         <value xmi:id="_5AYT27i-Eee9A-N-VXhdEA" x="775.88666" y="283.32867"/>
