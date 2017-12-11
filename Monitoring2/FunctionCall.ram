@@ -148,7 +148,7 @@
   <coreConcern href="Monitoring2.core#_cAUd0Li-Eee9A-N-VXhdEA"/>
   <structuralView xmi:id="_O4AmILjNEee9A-N-VXhdEA">
     <classes xsi:type="ram:Class" xmi:id="_O4AmIbjNEee9A-N-VXhdEA" name="FunctionCall" visibility="public" superTypes="_O4AmKbjNEee9A-N-VXhdEA">
-      <operations xmi:id="_nym9cN6MEee1F9EAO_Xg6w" name="captureLog" visibility="public" returnType="_O4BNELjNEee9A-N-VXhdEA"/>
+      <operations xmi:id="_nym9cN6MEee1F9EAO_Xg6w" name="capture" visibility="public" returnType="_O4BNELjNEee9A-N-VXhdEA"/>
       <operations xmi:id="_y8FzUN6MEee1F9EAO_Xg6w" name="addToLogs" visibility="public" returnType="_O4BNELjNEee9A-N-VXhdEA">
         <parameters xmi:id="_y8FzUd6MEee1F9EAO_Xg6w" name="capturedLog" type="_O4AmPbjNEee9A-N-VXhdEA"/>
       </operations>
@@ -186,7 +186,8 @@
       <operations xmi:id="_rho-gN6NEee1F9EAO_Xg6w" name="getMyLog" extendedVisibility="package">
         <returnType xsi:type="ram:ImplementationClass" href="Reused_Association/Woven_Association_ArrayList_Association_Many_OrderedBidirectional_OrderedToOne_PlainBidirectional_PlainToOne.ram#_33HXn9uGEeeDsv1WRQ7p7Q"/>
       </operations>
-      <operations xmi:id="_8SZpIN6REee1F9EAO_Xg6w" name="convertLogsToString" visibility="public" returnType="_O4BNELjNEee9A-N-VXhdEA"/>
+      <operations xmi:id="_8SZpIN6REee1F9EAO_Xg6w" name="present" visibility="public" returnType="_O4BNFbjNEee9A-N-VXhdEA"/>
+      <operations xmi:id="_gui2EN6SEee1F9EAO_Xg6w" name="reset" visibility="public" returnType="_O4BNELjNEee9A-N-VXhdEA"/>
       <associationEnds xmi:id="_S6oB8N6MEee1F9EAO_Xg6w" name="myLog" upperBound="-1" referenceType="Aggregation" assoc="_S6opAN6MEee1F9EAO_Xg6w" featureSelection="_rhcKMN6NEee1F9EAO_Xg6w"/>
       <attributes xmi:id="_-xAWYN6NEee1F9EAO_Xg6w" name="logs" type="_OB7qIN6LEee1F9EAO_Xg6w"/>
       <attributes xmi:id="_1PHzoN6REee1F9EAO_Xg6w" name="convertedLogs" type="_O4BNGrjNEee9A-N-VXhdEA"/>
@@ -196,13 +197,13 @@
       <operations xmi:id="_eH-OsN6NEee1F9EAO_Xg6w" name="captureCurrentTime" visibility="public" returnType="_O4BNF7jNEee9A-N-VXhdEA"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_O4AmK7jNEee9A-N-VXhdEA" name="InputLog" visibility="public" superTypes="_O4AmKrjNEee9A-N-VXhdEA">
-      <operations xmi:id="_kRJzcN6NEee1F9EAO_Xg6w" name="logInput" visibility="public" returnType="_O4BNFbjNEee9A-N-VXhdEA"/>
+      <operations xmi:id="_kRJzcN6NEee1F9EAO_Xg6w" name="logInput" visibility="public" returnType="_O4BNELjNEee9A-N-VXhdEA"/>
       <associationEnds xmi:id="_KxnTcd6MEee1F9EAO_Xg6w" name="myLog" lowerBound="1" navigable="false" assoc="_KxnTct6MEee1F9EAO_Xg6w"/>
       <attributes xmi:id="_O4AmMrjNEee9A-N-VXhdEA" name="startTime" type="_O4BNF7jNEee9A-N-VXhdEA"/>
       <attributes xmi:id="_O4AmM7jNEee9A-N-VXhdEA" name="inputs" type="_O4BNGrjNEee9A-N-VXhdEA"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_O4AmNLjNEee9A-N-VXhdEA" name="OutputLog" visibility="public" superTypes="_O4AmKrjNEee9A-N-VXhdEA">
-      <operations xmi:id="_h05zcN6NEee1F9EAO_Xg6w" name="logOutput" visibility="public" returnType="_O4BNFbjNEee9A-N-VXhdEA"/>
+      <operations xmi:id="_h05zcN6NEee1F9EAO_Xg6w" name="logOutput" visibility="public" returnType="_O4BNELjNEee9A-N-VXhdEA"/>
       <associationEnds xmi:id="_MQXJYd6MEee1F9EAO_Xg6w" name="myLog" lowerBound="1" navigable="false" assoc="_MQXwcN6MEee1F9EAO_Xg6w"/>
       <attributes xmi:id="_O4AmO7jNEee9A-N-VXhdEA" name="outputs" type="_O4BNGrjNEee9A-N-VXhdEA"/>
       <attributes xmi:id="_O4AmPLjNEee9A-N-VXhdEA" name="endTime" type="_O4BNF7jNEee9A-N-VXhdEA"/>
@@ -240,6 +241,7 @@
         <parameters xmi:id="_rh4PEt6NEee1F9EAO_Xg6w" name="index" type="_O4BNE7jNEee9A-N-VXhdEA"/>
       </operations>
       <operations xmi:id="_RYmuMN6PEee1F9EAO_Xg6w" name="capture" visibility="public" returnType="_O4BNELjNEee9A-N-VXhdEA"/>
+      <operations xmi:id="_AiUwwN6TEee1F9EAO_Xg6w" name="convertToCombinedLog" visibility="public" returnType="_O4BNELjNEee9A-N-VXhdEA"/>
       <associationEnds xmi:id="_KxnTcN6MEee1F9EAO_Xg6w" name="myInputLog" lowerBound="1" assoc="_KxnTct6MEee1F9EAO_Xg6w" featureSelection="_KxpvsN6MEee1F9EAO_Xg6w"/>
       <associationEnds xmi:id="_MQXJYN6MEee1F9EAO_Xg6w" name="myOutputLog" lowerBound="1" assoc="_MQXwcN6MEee1F9EAO_Xg6w" featureSelection="_MQaMsN6MEee1F9EAO_Xg6w"/>
       <associationEnds xmi:id="_S6oB8d6MEee1F9EAO_Xg6w" name="myFunctionCall" lowerBound="1" assoc="_S6opAN6MEee1F9EAO_Xg6w" featureSelection="_rhzWkN6NEee1F9EAO_Xg6w"/>
@@ -267,25 +269,25 @@
   <layout xmi:id="_O4BNHLjNEee9A-N-VXhdEA">
     <containers xmi:id="_O4BNHbjNEee9A-N-VXhdEA" key="_O4AmILjNEee9A-N-VXhdEA">
       <value xmi:id="_O4BNHrjNEee9A-N-VXhdEA" key="_O4AmIbjNEee9A-N-VXhdEA">
-        <value xmi:id="_O4BNH7jNEee9A-N-VXhdEA" x="278.35156" y="341.24896"/>
+        <value xmi:id="_O4BNH7jNEee9A-N-VXhdEA" x="278.28464" y="341.2405"/>
       </value>
       <value xmi:id="_O4BNILjNEee9A-N-VXhdEA" key="_O4AmKbjNEee9A-N-VXhdEA">
         <value xmi:id="_O4BNIbjNEee9A-N-VXhdEA" x="401.97845" y="118.00002"/>
       </value>
       <value xmi:id="_O4BNIrjNEee9A-N-VXhdEA" key="_O4AmKrjNEee9A-N-VXhdEA">
-        <value xmi:id="_O4BNI7jNEee9A-N-VXhdEA" x="1269.8113" y="635.1619"/>
+        <value xmi:id="_O4BNI7jNEee9A-N-VXhdEA" x="1341.1758" y="635.19995"/>
       </value>
       <value xmi:id="_O4BNJLjNEee9A-N-VXhdEA" key="_O4AmK7jNEee9A-N-VXhdEA">
-        <value xmi:id="_O4BNJbjNEee9A-N-VXhdEA" x="923.93854" y="615.15906"/>
+        <value xmi:id="_O4BNJbjNEee9A-N-VXhdEA" x="923.95526" y="615.1805"/>
       </value>
       <value xmi:id="_O4BNJrjNEee9A-N-VXhdEA" key="_O4AmNLjNEee9A-N-VXhdEA">
-        <value xmi:id="_O4BNJ7jNEee9A-N-VXhdEA" x="1338.8676" y="328.26245"/>
+        <value xmi:id="_O4BNJ7jNEee9A-N-VXhdEA" x="1338.907" y="328.26825"/>
       </value>
       <value xmi:id="_O4BNKLjNEee9A-N-VXhdEA" key="_O4AmPbjNEee9A-N-VXhdEA">
         <value xmi:id="_O4BNKbjNEee9A-N-VXhdEA" x="932.44147" y="13.751904"/>
       </value>
       <value xmi:id="_RzMSwLjPEee9A-N-VXhdEA" key="_RzEW8LjPEee9A-N-VXhdEA">
-        <value xmi:id="_RzMSwbjPEee9A-N-VXhdEA" x="373.331" y="830.382"/>
+        <value xmi:id="_RzMSwbjPEee9A-N-VXhdEA" x="373.31876" y="777.5129"/>
       </value>
       <value xmi:id="_UCKEsLjPEee9A-N-VXhdEA" key="_UCA6wLjPEee9A-N-VXhdEA">
         <value xmi:id="_UCKEsbjPEee9A-N-VXhdEA" x="465.8036" y="583.1651"/>
