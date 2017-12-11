@@ -54,6 +54,24 @@
     </compositions>
     <reuse href="Monitoring2.core#_QiKeVt6jEeeyQ5_mP1oiKg"/>
   </modelReuses>
+  <modelReuses xmi:id="_Iwp0YN6kEeeiy78TZe8BlA">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_Iwp0Yd6kEeeiy78TZe8BlA">
+      <source xsi:type="ram:Aspect" href="Reused_Association/Woven_Association_Association_One.ram#_3aGc8Li_Eee9A-N-VXhdEA"/>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_Iwp0Yt6kEeeiy78TZe8BlA" to="_GGO1gN6kEeeiy78TZe8BlA">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_One.ram#_3aGc97i_Eee9A-N-VXhdEA"/>
+      </mappings>
+      <mappings xsi:type="ram:ClassifierMapping" xmi:id="_Iwp0Y96kEeeiy78TZe8BlA" to="_w_wHV7jNEee9A-N-VXhdEA">
+        <from xsi:type="ram:Class" href="Reused_Association/Woven_Association_Association_One.ram#_3aGc8ri_Eee9A-N-VXhdEA"/>
+        <operationMappings xmi:id="_Iwp0ZN6kEeeiy78TZe8BlA" to="_IwzlYN6kEeeiy78TZe8BlA">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_One.ram#_3aGc87i_Eee9A-N-VXhdEA"/>
+        </operationMappings>
+        <operationMappings xmi:id="_Iwp0Zd6kEeeiy78TZe8BlA" to="_Iw2BoN6kEeeiy78TZe8BlA">
+          <from xsi:type="ram:Operation" href="Reused_Association/Woven_Association_Association_One.ram#_3aGc9Li_Eee9A-N-VXhdEA"/>
+        </operationMappings>
+      </mappings>
+    </compositions>
+    <reuse href="Monitoring2.core#_Iwp0Zt6kEeeiy78TZe8BlA"/>
+  </modelReuses>
   <realizes href="Monitoring2.core#_HsMU8LjMEee9A-N-VXhdEA"/>
   <coreConcern href="Monitoring2.core#_cAUd0Li-Eee9A-N-VXhdEA"/>
   <structuralView xmi:id="_w_vgabjNEee9A-N-VXhdEA">
@@ -64,8 +82,13 @@
         <parameters xmi:id="_BkRYId6iEeeyQ5_mP1oiKg" name="newObject" type="_H6cE8LjPEee9A-N-VXhdEA"/>
       </operations>
       <operations xmi:id="_YTUi8N6iEeeyQ5_mP1oiKg" name="generateReport" visibility="public" returnType="_w_wHcLjNEee9A-N-VXhdEA"/>
+      <operations xmi:id="_IwzlYN6kEeeiy78TZe8BlA" name="getMyTimer" extendedVisibility="package" returnType="_GGO1gN6kEeeiy78TZe8BlA"/>
+      <operations xmi:id="_Iw2BoN6kEeeiy78TZe8BlA" name="setMyTimer" extendedVisibility="package" returnType="_w_wHcrjNEee9A-N-VXhdEA">
+        <parameters xmi:id="_Iw2Bod6kEeeiy78TZe8BlA" name="newObject" type="_GGO1gN6kEeeiy78TZe8BlA"/>
+      </operations>
       <associationEnds xmi:id="_BkKDYN6iEeeyQ5_mP1oiKg" name="myInfoFrame" lowerBound="1" assoc="_BkKDYt6iEeeyQ5_mP1oiKg" featureSelection="_BkNGsN6iEeeyQ5_mP1oiKg"/>
       <associationEnds xmi:id="_QiICEd6jEeeyQ5_mP1oiKg" name="myReportTask" lowerBound="1" navigable="false" assoc="_QiIpIN6jEeeyQ5_mP1oiKg"/>
+      <associationEnds xmi:id="_IvsLEN6kEeeiy78TZe8BlA" name="myTimer" lowerBound="1" assoc="_IvtZMd6kEeeiy78TZe8BlA" featureSelection="_Iwp0YN6kEeeiy78TZe8BlA"/>
       <attributes xmi:id="_JJsRYd6iEeeyQ5_mP1oiKg" name="reports" type="_JJsRYN6iEeeyQ5_mP1oiKg"/>
     </classes>
     <classes xsi:type="ram:Class" xmi:id="_w_wHbLjNEee9A-N-VXhdEA" name="Formatter" visibility="public" abstract="true">
@@ -83,7 +106,7 @@
       <associationEnds xmi:id="_KbnBMLjPEee9A-N-VXhdEA" name="frameFormatter" lowerBound="1" assoc="_KboPULjPEee9A-N-VXhdEA" featureSelection="_Ksoq0N6iEeeyQ5_mP1oiKg"/>
       <associationEnds xmi:id="_BkKDYd6iEeeyQ5_mP1oiKg" name="myReport" lowerBound="1" navigable="false" assoc="_BkKDYt6iEeeyQ5_mP1oiKg"/>
     </classes>
-    <classes xsi:type="ram:Class" xmi:id="_OAYTgN6iEeeyQ5_mP1oiKg" name="ReportTask" visibility="public">
+    <classes xsi:type="ram:Class" xmi:id="_OAYTgN6iEeeyQ5_mP1oiKg" name="ReportTask" visibility="public" superTypes="_JzLoYN6kEeeiy78TZe8BlA">
       <operations xmi:id="_P5bf0N6iEeeyQ5_mP1oiKg" name="run" visibility="public" returnType="_w_wHcLjNEee9A-N-VXhdEA"/>
       <operations xmi:id="_QiNhoN6jEeeyQ5_mP1oiKg" name="getMyReport" extendedVisibility="package" returnType="_w_wHV7jNEee9A-N-VXhdEA"/>
       <operations xmi:id="_QiNhod6jEeeyQ5_mP1oiKg" name="setMyReport" extendedVisibility="package" returnType="_w_wHcrjNEee9A-N-VXhdEA">
@@ -91,9 +114,22 @@
       </operations>
       <associationEnds xmi:id="_QiICEN6jEeeyQ5_mP1oiKg" name="myReport" lowerBound="1" assoc="_QiIpIN6jEeeyQ5_mP1oiKg" featureSelection="_QiKeUN6jEeeyQ5_mP1oiKg"/>
     </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_GGO1gN6kEeeiy78TZe8BlA" name="Timer" visibility="public" instanceClassName="java.util.Timer">
+      <operations xmi:id="_JzVZYN6kEeeiy78TZe8BlA" name="scheduleAtFixedRate" visibility="public" returnType="_w_wHcLjNEee9A-N-VXhdEA">
+        <parameters xmi:id="_JzVZYd6kEeeiy78TZe8BlA" name="arg0" type="_JzLoYN6kEeeiy78TZe8BlA"/>
+        <parameters xmi:id="_JzVZYt6kEeeiy78TZe8BlA" name="arg1" type="_w_wHeLjNEee9A-N-VXhdEA"/>
+        <parameters xmi:id="_JzVZY96kEeeiy78TZe8BlA" name="arg2" type="_w_wHeLjNEee9A-N-VXhdEA"/>
+      </operations>
+      <operations xmi:id="_L6n2AN6kEeeiy78TZe8BlA" name="cancel" visibility="public" returnType="_w_wHcLjNEee9A-N-VXhdEA"/>
+      <associationEnds xmi:id="_IvtZMN6kEeeiy78TZe8BlA" name="myReport" lowerBound="1" navigable="false" assoc="_IvtZMd6kEeeiy78TZe8BlA"/>
+    </classes>
+    <classes xsi:type="ram:ImplementationClass" xmi:id="_JzLoYN6kEeeiy78TZe8BlA" name="TimerTask" visibility="public" instanceClassName="java.util.TimerTask">
+      <operations xmi:id="_M6RVIN6kEeeiy78TZe8BlA" name="run" visibility="public" returnType="_w_wHcLjNEee9A-N-VXhdEA"/>
+    </classes>
     <associations xmi:id="_KboPULjPEee9A-N-VXhdEA" name="InfoFrame_Formatter" ends="_KbnBMLjPEee9A-N-VXhdEA _KbnoQLjPEee9A-N-VXhdEA"/>
     <associations xmi:id="_BkKDYt6iEeeyQ5_mP1oiKg" name="Report_InfoFrame" ends="_BkKDYN6iEeeyQ5_mP1oiKg _BkKDYd6iEeeyQ5_mP1oiKg"/>
     <associations xmi:id="_QiIpIN6jEeeyQ5_mP1oiKg" name="ReportTask_Report" ends="_QiICEN6jEeeyQ5_mP1oiKg _QiICEd6jEeeyQ5_mP1oiKg"/>
+    <associations xmi:id="_IvtZMd6kEeeiy78TZe8BlA" name="Report_Timer" ends="_IvsLEN6kEeeiy78TZe8BlA _IvtZMN6kEeeiy78TZe8BlA"/>
     <types xsi:type="ram:RVoid" xmi:id="_w_wHcLjNEee9A-N-VXhdEA"/>
     <types xsi:type="ram:RAny" xmi:id="_w_wHcbjNEee9A-N-VXhdEA"/>
     <types xsi:type="ram:RBoolean" xmi:id="_w_wHcrjNEee9A-N-VXhdEA"/>
@@ -154,6 +190,12 @@
       </value>
       <value xmi:id="_OAY6kN6iEeeyQ5_mP1oiKg" key="_OAYTgN6iEeeyQ5_mP1oiKg">
         <value xmi:id="_OAY6kd6iEeeyQ5_mP1oiKg" x="772.4999" y="620.3652"/>
+      </value>
+      <value xmi:id="_GGTuAN6kEeeiy78TZe8BlA" key="_GGO1gN6kEeeiy78TZe8BlA">
+        <value xmi:id="_GGTuAd6kEeeiy78TZe8BlA" x="88.0" y="297.0"/>
+      </value>
+      <value xmi:id="_JzPSwN6kEeeiy78TZe8BlA" key="_JzLoYN6kEeeiy78TZe8BlA">
+        <value xmi:id="_JzPSwd6kEeeiy78TZe8BlA" x="355.45627" y="610.3652"/>
       </value>
     </containers>
     <containers xmi:id="_MESk0N6jEeeyQ5_mP1oiKg" key="_MESk096jEeeyQ5_mP1oiKg">
