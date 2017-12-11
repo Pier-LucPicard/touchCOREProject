@@ -201,11 +201,11 @@
       </operations>
       <operations xmi:id="_QjUoENuGEeeDsv1WRQ7p7Q" name="start" visibility="public" returnType="_5AYTzLi-Eee9A-N-VXhdEA"/>
       <operations xmi:id="_VoJM0NuGEeeDsv1WRQ7p7Q" name="stop" visibility="public" returnType="_5AYTzLi-Eee9A-N-VXhdEA"/>
-      <operations xmi:id="_yN99wNuGEeeDsv1WRQ7p7Q" name="setSimpleMyTimer" extendedVisibility="protected" returnType="_5AYTzri-Eee9A-N-VXhdEA">
+      <operations xmi:id="_yN99wNuGEeeDsv1WRQ7p7Q" name="setSimpleMyTimedTask" extendedVisibility="protected" returnType="_5AYTzri-Eee9A-N-VXhdEA">
         <parameters xmi:id="_yN99wduGEeeDsv1WRQ7p7Q" name="newObject" type="_5AYTvLi-Eee9A-N-VXhdEA"/>
       </operations>
-      <operations xmi:id="_yOBBENuGEeeDsv1WRQ7p7Q" name="getMyTimer" extendedVisibility="package" returnType="_5AYTvLi-Eee9A-N-VXhdEA"/>
-      <operations xmi:id="_yOEEYNuGEeeDsv1WRQ7p7Q" name="setMyTimer" extendedVisibility="package" returnType="_5AYTzri-Eee9A-N-VXhdEA">
+      <operations xmi:id="_yOBBENuGEeeDsv1WRQ7p7Q" name="getMyTimedTask" extendedVisibility="package" returnType="_5AYTvLi-Eee9A-N-VXhdEA"/>
+      <operations xmi:id="_yOEEYNuGEeeDsv1WRQ7p7Q" name="setMyTimedTask" extendedVisibility="package" returnType="_5AYTzri-Eee9A-N-VXhdEA">
         <parameters xmi:id="_yOEEYduGEeeDsv1WRQ7p7Q" name="a" type="_5AYTvLi-Eee9A-N-VXhdEA"/>
       </operations>
       <operations xmi:id="_34qPsNuGEeeDsv1WRQ7p7Q" name="addAggregatedInfoFrameAt" extendedVisibility="package" returnType="_5AYTzri-Eee9A-N-VXhdEA">
@@ -253,7 +253,7 @@
         <parameters xmi:id="_4XFREduGEeeDsv1WRQ7p7Q" name="newObject" type="_5AXsy7i-Eee9A-N-VXhdEA"/>
         <parameters xmi:id="_4XFREtuGEeeDsv1WRQ7p7Q" name="index" type="_5AYTz7i-Eee9A-N-VXhdEA"/>
       </operations>
-      <associationEnds xmi:id="_5AYTtLi-Eee9A-N-VXhdEA" name="myTimer" lowerBound="1" assoc="_5AYTy7i-Eee9A-N-VXhdEA" featureSelection="_yOdF8NuGEeeDsv1WRQ7p7Q"/>
+      <associationEnds xmi:id="_5AYTtLi-Eee9A-N-VXhdEA" name="myTimedTask" lowerBound="1" assoc="_5AYTy7i-Eee9A-N-VXhdEA" featureSelection="_yOdF8NuGEeeDsv1WRQ7p7Q"/>
       <associationEnds xmi:id="_7YNtwLi-Eee9A-N-VXhdEA" name="aggregatorInfoFrame" lowerBound="1" referenceType="Composition" assoc="_7YOU0bi-Eee9A-N-VXhdEA" featureSelection="_4Wwg8NuGEeeDsv1WRQ7p7Q"/>
       <associationEnds xmi:id="_7YOU0Li-Eee9A-N-VXhdEA" name="aggregatedInfoFrame" upperBound="-1" assoc="_7YOU0bi-Eee9A-N-VXhdEA" featureSelection="_34VfkNuGEeeDsv1WRQ7p7Q"/>
       <associationEnds xmi:id="_M4DQMNuGEeeDsv1WRQ7p7Q" name="myTimer1" lowerBound="1" assoc="_M4FscNuGEeeDsv1WRQ7p7Q" featureSelection="_M4YAUNuGEeeDsv1WRQ7p7Q"/>
@@ -280,6 +280,7 @@
         <parameters xmi:id="_HEiHgtuIEeepPPkxCzBvJg" name="arg1" type="_5AYT1Li-Eee9A-N-VXhdEA"/>
         <parameters xmi:id="_HEiHg9uIEeepPPkxCzBvJg" name="arg2" type="_5AYT1Li-Eee9A-N-VXhdEA"/>
       </operations>
+      <operations xmi:id="_NR4pEN6SEee2K6l8wswqqQ" name="cancel" visibility="public" returnType="_5AYTzLi-Eee9A-N-VXhdEA"/>
       <associationEnds xmi:id="_M4FFYNuGEeeDsv1WRQ7p7Q" name="myInfoFrame" lowerBound="1" navigable="false" assoc="_M4FscNuGEeeDsv1WRQ7p7Q"/>
     </classes>
     <associations xmi:id="_5AYTy7i-Eee9A-N-VXhdEA" name="Timer_InfoFrame" ends="_5AYTyLi-Eee9A-N-VXhdEA _5AYTtLi-Eee9A-N-VXhdEA"/>
@@ -342,6 +343,22 @@
       <formalGates xmi:id="_1ixZl9uKEee5EeA4V8AKlg" message="_1ixZlNuKEee5EeA4V8AKlg" name="out_create"/>
     </specification>
   </messageViews>
+  <messageViews xsi:type="ram:MessageView" xmi:id="_G9J7o96SEee2K6l8wswqqQ" specifies="_VoJM0NuGEeeDsv1WRQ7p7Q">
+    <specification xmi:id="_G9J7pN6SEee2K6l8wswqqQ">
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_G9J7pd6SEee2K6l8wswqqQ" covered="_G9J7p96SEee2K6l8wswqqQ" message="_G9J7qN6SEee2K6l8wswqqQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_HjFTMd6SEee2K6l8wswqqQ" covered="_G9J7p96SEee2K6l8wswqqQ" message="_HjFTMN6SEee2K6l8wswqqQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_HjFTMt6SEee2K6l8wswqqQ" covered="_HjFTM96SEee2K6l8wswqqQ" message="_HjFTMN6SEee2K6l8wswqqQ"/>
+      <fragments xsi:type="ram:MessageOccurrenceSpecification" xmi:id="_G9J7pt6SEee2K6l8wswqqQ" covered="_G9J7p96SEee2K6l8wswqqQ" message="_G9J7qd6SEee2K6l8wswqqQ"/>
+      <lifelines xmi:id="_G9J7p96SEee2K6l8wswqqQ" represents="_G9J7qt6SEee2K6l8wswqqQ" coveredBy="_G9J7pd6SEee2K6l8wswqqQ _G9J7pt6SEee2K6l8wswqqQ _HjFTMd6SEee2K6l8wswqqQ"/>
+      <lifelines xmi:id="_HjFTM96SEee2K6l8wswqqQ" represents="_M4DQMNuGEeeDsv1WRQ7p7Q" coveredBy="_HjFTMt6SEee2K6l8wswqqQ"/>
+      <messages xmi:id="_G9J7qN6SEee2K6l8wswqqQ" sendEvent="_G9J7q96SEee2K6l8wswqqQ" receiveEvent="_G9J7pd6SEee2K6l8wswqqQ" signature="_VoJM0NuGEeeDsv1WRQ7p7Q"/>
+      <messages xmi:id="_G9J7qd6SEee2K6l8wswqqQ" sendEvent="_G9J7pt6SEee2K6l8wswqqQ" receiveEvent="_G9J7rN6SEee2K6l8wswqqQ" signature="_VoJM0NuGEeeDsv1WRQ7p7Q" messageSort="reply"/>
+      <messages xmi:id="_HjFTMN6SEee2K6l8wswqqQ" sendEvent="_HjFTMd6SEee2K6l8wswqqQ" receiveEvent="_HjFTMt6SEee2K6l8wswqqQ"/>
+      <properties xmi:id="_G9J7qt6SEee2K6l8wswqqQ" name="target" lowerBound="1" type="_5AXsy7i-Eee9A-N-VXhdEA"/>
+      <formalGates xmi:id="_G9J7q96SEee2K6l8wswqqQ" message="_G9J7qN6SEee2K6l8wswqqQ" name="in_stop"/>
+      <formalGates xmi:id="_G9J7rN6SEee2K6l8wswqqQ" message="_G9J7qd6SEee2K6l8wswqqQ" name="out_stop"/>
+    </specification>
+  </messageViews>
   <layout xmi:id="_5AYT1ri-Eee9A-N-VXhdEA">
     <containers xmi:id="_5AYT17i-Eee9A-N-VXhdEA" key="_5AXsybi-Eee9A-N-VXhdEA">
       <value xmi:id="_5AYT2Li-Eee9A-N-VXhdEA" key="_5AXsyri-Eee9A-N-VXhdEA">
@@ -376,6 +393,11 @@
     <containers xmi:id="_1iwygNuKEee5EeA4V8AKlg" key="_1iwyg9uKEee5EeA4V8AKlg">
       <value xmi:id="_1iwygduKEee5EeA4V8AKlg" key="_1ixZktuKEee5EeA4V8AKlg">
         <value xmi:id="_1iwygtuKEee5EeA4V8AKlg" x="100.0" y="94.0"/>
+      </value>
+    </containers>
+    <containers xmi:id="_G9J7oN6SEee2K6l8wswqqQ" key="_G9J7o96SEee2K6l8wswqqQ">
+      <value xmi:id="_G9J7od6SEee2K6l8wswqqQ" key="_G9J7p96SEee2K6l8wswqqQ">
+        <value xmi:id="_G9J7ot6SEee2K6l8wswqqQ" x="100.0" y="100.0"/>
       </value>
     </containers>
   </layout>
