@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<core:COREConcern xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://cs.mcgill.ca/sel/core/2.0" xmlns:ram="http://cs.mcgill.ca/sel/ram/3.0" xmi:id="_qY68gNK7Eea1svIR8Ev7zg" name="Proxy">
+  <models xsi:type="core:COREFeatureModel" href="#_qY7jkNK7Eea1svIR8Ev7zg"/>
+  <models xsi:type="ram:Aspect" href="Proxy.ram#_zSrLcNK7Eea1svIR8Ev7zg"/>
+  <featureModel xmi:id="_qY7jkNK7Eea1svIR8Ev7zg" coreConcern="_qY68gNK7Eea1svIR8Ev7zg" root="_qY7jkdK7Eea1svIR8Ev7zg">
+    <features xmi:id="_qY7jkdK7Eea1svIR8Ev7zg" name="Proxy">
+      <realizedBy xsi:type="ram:Aspect" href="Proxy.ram#_zSrLcNK7Eea1svIR8Ev7zg"/>
+      <reuses xmi:id="_3Bx6dtK7Eea1svIR8Ev7zg" name="Association_Proxy_Subject" selectedConfiguration="_3Bx6d9K7Eea1svIR8Ev7zg">
+        <reusedConcern href="Reused_Association/Association.core#_mZ-ooACWEeWTy6SkLveZ6w"/>
+        <configurations xmi:id="_3Bx6d9K7Eea1svIR8Ev7zg" name="Automatic selection" reuse="_3Bx6dtK7Eea1svIR8Ev7zg">
+          <source xsi:type="core:COREFeatureModel" href="Reused_Association/Association.core#_mZ_PsACWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_EnSLwH19EeW8vqKd4iftUw"/>
+          <selected href="Reused_Association/Association.core#_mZ_PsQCWEeWTy6SkLveZ6w"/>
+          <selected href="Reused_Association/Association.core#_nEJnAACWEeWTy6SkLveZ6w"/>
+        </configurations>
+      </reuses>
+    </features>
+  </featureModel>
+</core:COREConcern>

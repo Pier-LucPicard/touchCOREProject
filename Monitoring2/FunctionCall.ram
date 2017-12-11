@@ -180,6 +180,12 @@
     </compositions>
     <reuse href="Monitoring2.core#_Dlg-ALjNEee9A-N-VXhdEA"/>
   </modelReuses>
+  <modelReuses xmi:id="_X-Mq8NuWEeeUGL9ne7TxGQ">
+    <compositions xsi:type="ram:Instantiation" xmi:id="_X-Mq8duWEeeUGL9ne7TxGQ">
+      <source xsi:type="ram:Aspect" href="Reused_Proxy/Woven_Proxy_Proxy.ram#_X9s7sNuWEeeUGL9ne7TxGQ"/>
+    </compositions>
+    <reuse href="Monitoring2.core#_X-RjcNuWEeeUGL9ne7TxGQ"/>
+  </modelReuses>
   <realizes href="Monitoring2.core#_ClNf8Li_Eee9A-N-VXhdEA"/>
   <coreConcern href="Monitoring2.core#_cAUd0Li-Eee9A-N-VXhdEA"/>
   <structuralView xmi:id="_O4AmILjNEee9A-N-VXhdEA">
